@@ -15,9 +15,10 @@
 
 
 h1 {
-    font-size: 4rem;
+    font-size: 25px;
     color: #fff;
     margin-bottom: 5rem;
+    text-align: center;
 }
 
 
@@ -120,9 +121,9 @@ input {
     box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
 }
 
-input::placeholder {
+/* input::placeholder {
     color: #aaa;
-}
+} */
 
 #username {
     margin-bottom: 3rem;
@@ -148,7 +149,25 @@ input::placeholder {
 
 
 /* модельное окно */
+.popupRules{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+.popupRules h6{
+    margin: 20px;
+    font-size:18px;
+    color: #fff;
+}
 
+.popupRules p{
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+
+}
 
 .btn-popup {
     font-size: 2.4rem;
@@ -194,6 +213,8 @@ input::placeholder {
 	align-items: center;
 	justify-content: center;
     z-index: 2;
+    border-radius: 14px;
+
 }
 
 .modal-overlay--visible {
@@ -205,3 +226,86 @@ input::placeholder {
 .modal--visible {
 	display: block;
 }
+
+
+/* text Quote */
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+
+}
+
+.mainLogo{
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+
+.mainLogo img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    margin-bottom: 50px;
+}
+
+.textQuote{
+    color: white;
+    font-size: 22px;
+    user-select: none;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.textQuote span{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.active{
+    animation: smoke 2s linear forwards;
+}
+
+@keyframes smoke {
+    20%{
+        color: red;
+    }
+    30%{
+        color: #cce4ef;
+    }
+    100%{
+        opacity: 0;
+        filter: blur(20px);
+        transform: translateX(300px) translateY(-300px) rotate(750deg) scale(4);
+
+    }
+}
+
+@keyframes gradientLogo {
+    10%{
+        background-color: aqua;
+    }
+    20%{
+        background-color: #fff;
+    }
+    30%{
+        background-color: yellow;
+    }
+    40%{
+        background-color: rebeccapurple;
+    }
+    50%{
+        background-color: forestgreen;
+    }
+    100%{
+        background-color: rgb(29, 26, 26);
+
+    }
+}
+
+
+

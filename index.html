@@ -4,23 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>MainPage</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="ico.png">
 </head>
 
 <body>
 
+
     <div class="container">
+
+
 
         <div class="modals">
             <div class="modal-overlay">
-                <div class="modal modal--1" data-target="form-popup">
-                    WINDOW
+                <div class="modal modal--1 popupRules" data-target="form-popup">
+                    <h6>Правила игры!</h6>
+                    <br>
+                    <p>Вам задается 10 вопросов, за каждый правильный ответ +100 очков</p>
+                    <br>
+                    <h6>Удачи!</h6>
                 </div>
             </div>
         </div>
         <div id="home" class="flex-column flex-center">
+            <div class="logo">
+                <div class="mainLogo">
+                    <img class="mainLogoImage" src="/mainLogo.png" alt="">
+                    <div class="bgAnim"></div>
+                </div>
+                <div class="randomQuote">
+                    <div class="textQuote">
+                        <h3>Недостижимых целей нет – есть большая лень, недостаток ума и запас отговорок</h3>
+                    </div>
+                </div>
+            </div>
             <a href="/game.html" class="btn">Старт</a>
             <a href="/highscores.html" id="highscore-btn" class="btn">Баллы<i class="fas fa-crown"></i></a>
             <a class="btn-popup" data-path="form-popup">Правила игры</a>
