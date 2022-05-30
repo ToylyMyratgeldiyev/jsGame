@@ -73,3 +73,88 @@ body {
         min-width: 40rem;
     }
 }
+
+
+@media all and (max-width:420px){
+    .container{
+        overflow: hidden;
+        padding: 20px;
+    }
+    .choice-container{
+        width: 200px;
+    }
+    .choice-prefix{
+        padding: 1rem;
+    }
+    .choice-text {
+        padding: 1rem;
+        width: 100%;
+    }
+    #progressBar {
+        width: 10rem;
+        height: 1.5rem;
+        border: 0.2rem solid rgb(11,223,36);
+        margin-top: 2rem;
+        border-radius: 50px;
+        overflow: hidden;
+        margin-left: 30px;
+    }
+    
+    #progressBarFull {
+        height: 100%;
+        background: rgb(11,223,36);
+        width: 0%;
+    }
+    .hud-prefix {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .hud-item{
+        margin: 30px;
+    }
+    #game{
+        margin: 50px;
+    }
+}
+
+@media all and (max-width:300px){
+    .container{
+        overflow: hidden;
+        padding: 20px;
+    }
+    .choice-container{
+        width: 50px;
+    }
+    .choice-prefix{
+        padding: 1rem;
+    }
+    .choice-text {
+        padding: 1rem;
+        width: 100%;
+    }
+    #progressBar {
+        width: 10rem;
+        height: 1.5rem;
+        border: 0.2rem solid rgb(11,223,36);
+        margin-top: 2rem;
+        border-radius: 50px;
+        overflow: hidden;
+        margin-left: 30px;
+    }
+    
+    #progressBarFull {
+        height: 100%;
+        background: rgb(11,223,36);
+        width: 0%;
+    }
+    .hud-prefix {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .hud-item{
+        margin: 30px;
+    }
+    #game{
+        margin: 50px;
+    }
+}

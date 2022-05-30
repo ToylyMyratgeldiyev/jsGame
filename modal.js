@@ -44,8 +44,29 @@ text.addEventListener('mouseover', (e)=>{
     e.target.classList.add('active')
 })
 
+
+text.addEventListener('touchstart', (e)=>{
+    if(e.target.tagName != 'SPAN') return
+    e.target.classList.add('active')
+})
 // let imgLogo = document.querySelector('.mainLogo')
 // imgLogo.addEventListener('mouseover', (e)=>{
 //     if(e.target.tagName != 'SPAN') return
 //     e.target.classList.add('active')
 // })
+
+let chekVolume = true
+let audio = document.querySelector('audio')
+let muteImg = document.querySelector('.muteImg')
+let muteAndVolumeBTN = document.querySelector('.mute')
+muteAndVolumeBTN.addEventListener('click',(e)=>{
+    if(chekVolume == true){
+        chekVolume = false;
+        muteImg.src = '/volume.svg'
+        audio.volume = 0;
+    }else if(chekVolume == false){
+        chekVolume = true;
+        muteImg.src = '/mute.svg'
+        audio.volume = 1;
+    }
+})
