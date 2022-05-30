@@ -10,12 +10,24 @@
 </head>
 
 <body>
+
     <div class="container">
+
+        <div class="modals">
+            <div class="modal-overlay">
+                <div class="modal modal--1" data-target="form-popup">
+                    WINDOW
+                </div>
+            </div>
+        </div>
         <div id="home" class="flex-column flex-center">
             <a href="/game.html" class="btn">Старт</a>
             <a href="/highscores.html" id="highscore-btn" class="btn">Баллы<i class="fas fa-crown"></i></a>
+            <a class="btn-popup" data-path="form-popup">Правила игры</a>
+
         </div>
     </div>
+    <script src="modal.js"></script>
 </body>
 
 </html>
