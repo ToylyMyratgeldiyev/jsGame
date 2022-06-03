@@ -11,13 +11,14 @@ let questionCounter = 0
 let availableQuestions = []
 let url = 'http://fe.it-academy.by/Sites/0039909/test.json'
 
-let  questions
-
+let  questions;
+//создаю ассинхронную функцию для получение вопросов с сервера, но это функция срабатывает после функции getNewQuestion
 async function asyncFETCH (){
     try{let response = await fetch(url)
         let data = await response.json()
         console.log(data);
-        return question = data
+         questions = data
+         return questions
     }catch(e){
         console.error(e);
     }
@@ -94,3 +95,4 @@ incrementScore = num => {
 }
 
 startGame()
+console.log('конец страницы');
